@@ -1,0 +1,70 @@
+.contenedor-testimonio{
+    width: 1170px;
+    height: 368px;
+    margin: 10px 10px 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
+
+}
+
+.imagen-testimonio{
+    height: 100%;/*Cubre todo el
+    contenedor*/
+    width: auto;
+}
+
+.contenedor-texto-testimonio{
+    text-align: center;
+    padding: 40px;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+.nombre-testimonio{
+    font-size: 1.3rem;
+}
+.cargo-testimonio{
+    font-size: 1.3rem;
+    margin-top: 15px;
+    padding-bottom: 30px;
+}
+.texto-testimonio{
+    font-size: 1.1rem;
+    text-align: justify; /*De izquierda a derecha*/
+}
+
+
+
+  /* Media queries para hacer el diseño responsive */
+
+/* Para pantallas más pequeñas */
+@media screen and (max-width: 480px) {
+    .contenedor-testimonio {
+      flex-direction: column; /* Cambiamos la dirección del flexbox a columna */
+      align-items: center; /* Centramos los elementos verticalmente */
+      height: auto;
+      margin: 10 10 40px;
+      width:320px;
+    
+    }
+  
+    .contenedor-texto-testimonio {
+      text-align: center; /* Centramos el texto */
+      justify-content: center;
+      padding:25px;
+  
+    }
+  
+    .imagen-testimonio {
+      margin-bottom: 20px;
+      width: 320px;
+      height: auto; /* Espacio entre la imagen y el resto del contenido */
+    }
+    .cargo-testimonio, .nombre-testimonio {
+        font-size: 1.2rem;
+    }
+  }
+  
